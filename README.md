@@ -7,7 +7,12 @@ v-dummyimage 100x200 [image_text]
 ```
 
 ## Install
-Download `v-dummyimage.sh` to `~/.local/bin/`
+Download `libexec/v-dummyimage` to `~/.local/bin/`
+
+## Install with [basher](https://github.com/basherpm/basher)
+```
+basher install vovanr/v-dummyimage
+```
 
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
