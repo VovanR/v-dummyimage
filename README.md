@@ -7,7 +7,7 @@ v-dummyimage 100x200 [image_text]
 ```
 
 ## Install
-Download `libexec/v-dummyimage` to `~/.local/bin/`
+Download [`libexec/v-dummyimage`](libexec/v-dummyimage) to `~/.local/bin/`
 
 ## Install with [basher](https://github.com/basherpm/basher)
 ```
