@@ -11,7 +11,14 @@ function downloadImage {
   imageUrl="https://dummyimage.com/"${size}"/000/fff/?text="${text}
   fileName=${size}"-"${text}".png"
 
-  wget -L ${imageUrl} -O ${fileName}
+  if [ -x "$(command -v wget)" ]; then
+    wget -L ${imageUrl} -O ${fileName} --quiet
+  elif [ -x "$(command -v curl)" ]; then
+    curl ${imageUrl} --output ${fileName} --silent
+  else
+    echo "Error: Needs wget or curl"
+    exit 1
+  fi
 }
 
 # Arguments exists
