@@ -2,7 +2,7 @@
 
 > Download dummy images
 
-```
+```shell
 v-dummyimage 100x200 [image_text]
 ```
 
